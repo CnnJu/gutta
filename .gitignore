@@ -1,0 +1,11 @@
+# .gitignore
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Directories
+Library/
+.Trash/
+
