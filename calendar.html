@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>What's going on</title>
+<link href="gutta.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<main>
+		<div class="pages-heading">
+			<h1><a href="index.html">Gutta</a></h1>
+			<div class="translated_version"><a href="#">SD</a></div>
+		</div>
+		<div class="navbar">
+			<label for="hamburger">&#9776;</label>
+			<input type="checkbox" id="hamburger"/>
+			<div class="nav-item">
+				<a href="about.html">Who we are</a>
+				<a href="gallery.html">Take a look</a>
+				<a href="contact.html">Get in touch</a>
+				<a href="work.html">Our work</a>
+				<a href="calendar.html">What's going on</a>
+			</div>
+		</div>
+		<div class="calendar">
+			<div class="events" id="upcomingevents">
+				<h2><a href="#">Upcoming events</a></h2>
+				<ul id="upcomingeventslist">
+					<!-- List items will be dynamically added here -->
+				</ul>
+			</div>
+			<div class="events" id="pastevents">
+				<h2><a href="#">Past events</a></h2>
+				<ul id="pasteventslist">
+					<!-- List items will be dynamically added here -->
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>2024</p>
+	</footer>
+	<script src="calendar.js"></script>
+</body>
+</html>
