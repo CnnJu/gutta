@@ -1,0 +1,52 @@
+# .gitignore
+
+<<<<<<< HEAD
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Directories
+Library/
+.Trash/
+
+=======
+# macOS system directories
+Library/Application Support/CallHistoryTransactions/
+Library/Application Support/CloudDocs/session/db/
+Library/Application Support/com.apple.sharedfilelist/
+Library/Application Support/Knowledge/
+Library/Application Support/com.apple.TCC/
+Library/Application Support/FileProvider/
+Library/Application Support/com.apple.avfoundation/Frecents/
+Library/Application Support/CallHistoryDB/
+Library/Assistant/SiriVocabulary/
+Library/Autosave Information/
+Library/IdentityServices/
+
+# Cache directories
+Library/Caches/com.apple.HomeKit/
+Library/Caches/CloudKit/
+Library/Caches/com.apple.Safari/
+Library/Caches/com.apple.findmy.fmfcore/
+Library/Caches/FamilyCircle/
+Library/Caches/com.apple.homed/
+Library/Caches/com.apple.findmy.fmipcore/
+Library/Caches/com.apple.ap.adprivacyd/
+
+# Other directories
+Library/Metadata/CoreSpotlight/
+Library/Metadata/com.apple.IntelligentSuggestions/
+Library/Cookies/
+Library/CoreFollowUp/
+Library/StatusKit/
+Library/Caches/com.apple.HomeKit/
+Library/Caches/CloudKit/
+Library/Caches/com.apple.Safari/
+Library/Caches/com.apple.findmy.fmfcore/
+Library/Caches/FamilyCircle/
+Library/Caches/com.apple.homed/
+Library/Caches/com.apple.findmy.fmipcore/
+Library/Caches/com.apple.ap.adprivacyd/
+.Trash/
+>>>>>>> origin/main
