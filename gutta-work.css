@@ -281,15 +281,11 @@ ul {
 	gap: 10px;
 
 }
-
 .projContainerImg a img {
 	display: block;
 	width: 100%;
 	height: auto;
 	display: block;
-}
-.movie {
-	display: table;
 }
 footer {
 	background-color: #0038A8;
