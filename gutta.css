@@ -71,7 +71,7 @@ ul {
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .nav-item a:hover {
-    color: grey;
+    color: #FD0000;
 }
 .nav-item a {
   flex-grow: 1;
