@@ -51,15 +51,10 @@ ul {
     right: 50px;
 	margin: 0;
 }
-.translated_version a {
-	text-decoration: none;
-	font-size: 36px;
-	color: #d62e02;
-	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
-}
-.translated_version a:hover{
-	color: #FD0000;
-}
+.translated_version img {
+	width: 60px;
+	height: 60px;
+  }
 .navbar {
 	width: 100%;
 	top: 0;

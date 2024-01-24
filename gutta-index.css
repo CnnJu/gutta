@@ -64,15 +64,10 @@ h1 a:hover{
 	border-radius: 10px;
 	padding: 0px 5px;
 }
-.translated_version a {
-	text-decoration: none;
-	font-size: 36px;
-	color: #d161a2;
-	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
-}
-.translated_version a:hover{
-	color: #a20160;
-}
+.translated_version img {
+	width: 60px;
+	height: 60px;
+  }
 .navbar {
 	text-align: right;
 	width: 100%;
