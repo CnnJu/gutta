@@ -347,6 +347,23 @@ video {
 	margin: 0px 0px 5px 0px;
 	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.4);
 }
+@media (max-width: 1200px) {
+    .work-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .work-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .work-container {
+        grid-template-columns: 1fr;
+    }
+}
 img {
 	width: 250px;
 	height: 250px;

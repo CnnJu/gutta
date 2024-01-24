@@ -39,9 +39,9 @@ const images = [
 	'images/smallerimages/richhard kink.jpg',
 	'images/smallerimages/richhard red.jpg',
 	'images/smallerimages/richhard.jpg',
-	'images/smallerimages/robin _ Lavrans cake.jpg',
+	'images/smallerimages/robin _ Lavrans cake.jpeg',
 	'images/smallerimages/robin asshole.jpg',
-	'images/smallerimages/robin audience.jpg',
+	'images/smallerimages/robin audience.jpeg',
 	'images/smallerimages/robin on toilet.jpg',
 	'images/smallerimages/robin red.jpg',
 	'images/smallerimages/show audience 1.jpg',
@@ -51,7 +51,15 @@ const images = [
 	'images/smallerimages/show audience pink.jpg',
 	'images/smallerimages/show audience pink(1).jpg',
 	'images/smallerimages/show audience Richard pink.jpg',
-	'images/CULT MOVIE.jpeg',
+	'images/smallerimages/CULT MOVIE.jpeg',
+	'images/drawings/Differences.jpg',
+	'images/drawings/Flower.jpg',
+	'images/drawings/Joy.jpg',
+	'images/drawings/snaillove.jpg',
+	'images/drawings/Spring.jpg',
+	'images/drawings/The Boys.jpg',
+	'images/drawings/Water.png',
+
   // Add more images as needed with 'images/imagename.jpg'
 ];
 
