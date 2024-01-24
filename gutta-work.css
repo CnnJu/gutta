@@ -100,6 +100,13 @@ ul {
   .navbar input:checked ~ .nav-item { display: block; }
 	.translated_version { display: none;}
 }
+.pages-heading {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
 
 .image-container {
     justify-content: space-between;
@@ -260,8 +267,15 @@ ul {
     line-height: 1.5;
 	
 }
-.projContainer p a {
-	color: #D62E02;
+.projContainer a p {
+	font-family: "DINdong", "Gotham", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+	color: #a20160;
+	text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.5);
+	font-size: 22px;
+
+}
+.projContainer a p:hover {
+	color: #fd9855;
 }
 footer {
 	background-color: #0038A8;
