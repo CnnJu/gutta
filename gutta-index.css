@@ -45,7 +45,7 @@ h1 a:hover{
 	margin: 20px 20px 20px 20px; 
 	font-size: 36px;
 	text-decoration: none;
-	color: #d62e02;
+	color: #a20160;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 .translated_version {
@@ -78,7 +78,7 @@ h1 a:hover{
 	padding: 0px 50px 0px 0px;
 }
 .nav-item a:hover {
-    color: grey;
+    color: #d161a2;
 }
 
 .nav-item li {
@@ -87,7 +87,7 @@ h1 a:hover{
 .nav-item a {
   flex-grow: 1;
   flex-basis: 0;
-  color: #d62e02;
+  color: #a20160;
   text-decoration: none;
   text-align: center;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
