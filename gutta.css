@@ -343,7 +343,7 @@ video {
 	display: flex;
 	flex-wrap: wrap;
 }
-.projContainerleft, .projContainerright {
+.projContainer {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 10px 40px 0px;
@@ -351,27 +351,26 @@ video {
 	margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-      .projContainerleft,
-      .projContainerright {
+      .projContainer {
         width: 50%; /* Half width on larger screens */
       }
     }
 
-.projContainerleft h2, .projContainerright h2 {
+.projContainer h2 {
 	margin-left: auto;
 }
 
-.projContainerleft img, .projContainerright img {
+.projContainer img {
 	width: 300px;
 	align-content: center;
 }
-.projContainerleft p, .projContainerright p {
+.projContainer p {
 	font-size: 18px;
 	max-width: 500px;
     line-height: 1.5;
 	
 }
-.projContainerright p a, .projContainerleft p a {
+.projContainer p a {
 	color: #D62E02;
 }
 .calendar {
