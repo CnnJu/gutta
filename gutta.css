@@ -332,6 +332,25 @@ video {
 .worknav a {
 	text-align: center;
 }
+.work-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	padding: 20px;
+}
+
+.categories {
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 5px;
+}
+img {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
 .calendar {
   display: flex;
   justify-content: center;
