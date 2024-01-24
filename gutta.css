@@ -343,8 +343,9 @@ video {
 	text-align: center;
 }
 
-h2 {
-	margin-bottom: 5px;
+.categories h2 {
+	margin: 0px 0px 5px 0px;
+	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.4);
 }
 img {
 	width: 250px;
