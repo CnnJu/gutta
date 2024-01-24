@@ -150,13 +150,15 @@ video {
 .aboutimage {
 	display: flex;
 	align-content: space-between;
+	height: 100%;
+	margin-bottom: 90px;
 }
 .intro {
     max-width: 1000px;
     width: 100%;
     padding: 16px 35px;
     color: #0038A2;
-    font-size: 18px;
+    font-size: 20px;
 }
 .image-container {
     justify-content: space-between;
@@ -185,6 +187,9 @@ video {
 	.about {
 		flex-direction: column;
 		align-items: center;
+	}
+	.aboutimage {
+		margin-bottom: 200px;
 	}
 	.intro, .image-container, .aboutimage {
 		width: 100%;
