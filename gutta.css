@@ -377,11 +377,7 @@ img {
 	border-radius: 5px;
 }
 .calendar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-	max-height: 800px;
-    overflow-y: auto;
+	text-align: center;
 }
 .events {
 	padding: 10px;

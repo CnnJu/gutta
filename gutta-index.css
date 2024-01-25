@@ -137,6 +137,46 @@ h1 a:hover{
     margin: 0;
     padding: 20px;
 }
+.video-container {
+    position: relative;
+    height: 100vh;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-around;
+    color: #D161A2;
+    text-align: center;
+	margin: 5px;
+	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+}
+.button { 
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+	padding-top: 30px;
+}
+.button a {
+	margin: 0px 40px 0px 40px; 
+	font-size: 36px;
+	text-decoration: none;
+	color: #d161a2;
+}
+.overlay p {
+	font-size: 52px;
+}
 footer {
 	background-color: #0038A8;
 	padding: 10px;
