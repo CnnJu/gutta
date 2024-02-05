@@ -161,6 +161,9 @@ ul {
 .projContainer a p:hover {
 	color: #fd9855;
 }
+.projContainer img:hover {
+	transform: scale(1.5);
+}
 .projContainerImg {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -195,7 +198,7 @@ ul {
 	transform: translate(-50%, -50%);
 }
 #modal figure img {
-	width: 400px;
+	width: 450px;
 }
 #modal figure figcaption {
 	text-align: center;
