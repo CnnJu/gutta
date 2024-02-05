@@ -133,7 +133,6 @@ ul {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 10px 40px 0px;
-	display: table;
 	margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -146,10 +145,6 @@ ul {
 	margin-left: auto;
 }
 
-.projContainer img {
-	width: 300px;
-	align-content: center;
-}
 .projContainer p {
 	font-size: 18px;
 	max-width: 500px;
@@ -166,18 +161,13 @@ ul {
 .projContainer a p:hover {
 	color: #fd9855;
 }
-.projContainerImg a {
+.projContainerImg {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 10px;
-
-}
-.projContainerImg a img {
-	display: block;
 	width: 100%;
-	height: auto;
-	display: block;
 }
+
 #modal {
 	display: none;
 	position: fixed;
@@ -189,16 +179,65 @@ ul {
   }
 
 #modal figure {
-	max-width: 80%;
-	max-height: 80%;
 	margin: auto;
 	display: block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: #fff; /* Adjust text color for captions */
+	text-align: center;
 }
+#modal-image img {
+	width: 80%;
+}
+.modal-trigger {
+	text-decoration: none;
+	color: inherit;
+  }
+
+  .modal-trigger figure {
+	position: relative;
+  }
+
+  .modal-trigger img {
+	width: 95%;
+	padding: 0px;
+	height: auto;
+  }
+
+  .modal-trigger figcaption {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #0038A8;
+	text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	font-size: 24px;
+}
+.prev,
+.next {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.modal-navigation {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	  padding: 0px 30px 0px 30px;
+	transform: translateY(-50%);
+}
+  
+
 footer {
 	background-color: #0038A8;
 	padding: 2px;
