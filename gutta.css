@@ -382,6 +382,12 @@ img {
 .calendar {
 	text-align: center;
 }
+#pasteventslist ul li {
+	text-align: left;
+}
+#pasteventslist a:hover {
+	color: #d62e02;
+}
 .events {
 	padding: 10px;
 }
