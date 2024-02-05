@@ -51,14 +51,6 @@ const images = [
 	'images/smallerimages/show audience pink.jpg',
 	'images/smallerimages/show audience pink(1).jpg',
 	'images/smallerimages/show audience Richard pink.jpg',
-	'images/smallerimages/CULT MOVIE.jpeg',
-	'images/drawings/Differences.jpg',
-	'images/drawings/Flower.jpg',
-	'images/drawings/Joy.jpg',
-	'images/drawings/snaillove.jpg',
-	'images/drawings/Spring.jpg',
-	'images/drawings/The Boys.jpg',
-	'images/drawings/Water.png',
 
   // Add more images as needed with 'images/imagename.jpg'
 ];
