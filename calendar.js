@@ -33,11 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // Example of adding a new upcoming event
   addEvent("03.03.24", "New York", "https://example.com/new-york-description", "https://example.com/new-york-tickets", true);
 
+    // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
+
   // Example of adding a new past event
   addEvent("2019-2024", "Gutteklubben at SALT, Skeiv Scene, LOKAL in Trondheim, Elsker Oslo, RAS/ Rogaland på Skeivå", "", "", false);
   addEvent("2019-2024", "Gutta at Pride; Træna Pride, Oslo Pride, Bodø Pride, Drammen Pride, Trondheim Pride", "", "", false);
   addEvent("2023", "Gutta Opening Pride, Oslo Pride", "", "", false);
   addEvent("2023", "Gutta at Comrades Inc", "", "", false);
+  addEvent("2023", "Gutta at Pride", "", "", false);
   addEvent("2023", "Gutta at Oslo Drag festival", "", "", false);
   addEvent("2022-2023", "Gutteklubben Goes To Hell, Spriten Kunsthall i Skien, Trondheim Pride, Dans på Skeivå på RAS, MiR Oslo", "", "", false);
   addEvent("2022", "Gutta`s reading for kids at Sølvberget library for FRI Rogaland, Lidköping Bibliotek for Lidköping city council", "", "", false);
@@ -63,4 +66,5 @@ document.addEventListener('DOMContentLoaded', function() {
   addEvent("2019", "«Gutta lover boyz», at ELSKER gay club, Oslo", "", "", false);
   addEvent("2018", "«Gutta på NULL av Åpninger», Dansens Hus, Oslo", "", "", false);
 
+  // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", false);'
 });
