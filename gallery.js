@@ -51,6 +51,7 @@ const images = [
 	'images/smallerimages/show audience pink.jpg',
 	'images/smallerimages/show audience pink(1).jpg',
 	'images/smallerimages/show audience Richard pink.jpg',
+	'images/EDL_3324_Foto Eirill DeLonge.jpg',
 
   // Add more images as needed with 'images/imagename.jpg'
 ];
