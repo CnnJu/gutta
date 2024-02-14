@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Example of adding a new upcoming event
-  addEvent("03.03.24", "New York", "https://example.com/new-york-description", "https://example.com/new-york-tickets", true);
+  
 
     // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
 
