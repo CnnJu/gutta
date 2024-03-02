@@ -1,76 +1,78 @@
 const imageContainer = document.getElementById('imageContainer');
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');
+const modalCaption = document.getElementById('modalCaption');
 
 const images = [
-  'images/smallerimages/gutta business 2.jpg',
-  'images/smallerimages/gutta fathers milk.jpg',
-  'images/smallerimages/gutta in bed 1.jpg',
-	'images/smallerimages/gutta in grass.jpg',
-	'images/smallerimages/gutta kink 1.jpg',
-	'images/smallerimages/gutta laughing government.jpg',
-	'images/smallerimages/gutta laughing kink 2.jpg',
-	'images/smallerimages/gutta laughing.jpg',
-	'images/smallerimages/gutta photoshoot.jpg',
-	'images/smallerimages/gutta posing w skulls.jpg',
-	'images/smallerimages/Larry kink.jpg',
-	'images/smallerimages/Larry red.jpg',
-  'images/smallerimages/larry sunshine.jpg',
-  'images/smallerimages/Lavrans in dress.jpg',
-	'images/smallerimages/Lavrans kink.jpg',
-	'images/smallerimages/Lavrans red.jpg',
-	'images/smallerimages/Lavrans sailor.jpg',
-	'images/smallerimages/lavrans.jpg',
-	'images/smallerimages/Portrait Larry.jpg',
-	'images/smallerimages/Portrait RichHard.jpg',
-	'images/smallerimages/PORTRAIT ROBIN.jpg',
-	'images/smallerimages/Portrett Lavrans 1 “Lavrans like Jesus, makes water into wine.” - A theatre director.jpg',
-	'images/smallerimages/pride 1.png',
-	'images/smallerimages/pride 2.png',
-	'images/smallerimages/pride 3.jpg',
-	'images/smallerimages/pride 4.jpg',
-	'images/smallerimages/pride 5.jpg',
-	'images/smallerimages/pride 6.jpg',
-	'images/smallerimages/pride 7.jpg',
-	'images/smallerimages/pride 8.jpg',
-	'images/smallerimages/pride 9.jpg',
-	'images/smallerimages/pride 10.jpg',
-	'images/smallerimages/richhard audience.jpg',
-	'images/smallerimages/richhard kink.jpg',
-	'images/smallerimages/richhard red.jpg',
-	'images/smallerimages/richhard.jpg',
-	'images/smallerimages/robin _ Lavrans cake.jpeg',
-	'images/smallerimages/robin asshole.jpg',
-	'images/smallerimages/robin audience.jpeg',
-	'images/smallerimages/robin on toilet.jpg',
-	'images/smallerimages/robin red.jpg',
-	'images/smallerimages/show audience 1.jpg',
-	'images/smallerimages/show audience 2.jpeg',
-	'images/smallerimages/show audience 3.jpg',
-	'images/smallerimages/show audience 4.jpg',
-	'images/smallerimages/show audience pink.jpg',
-	'images/smallerimages/show audience pink(1).jpg',
-	'images/smallerimages/show audience Richard pink.jpg',
-	'images/EDL_3324_Foto Eirill DeLonge.jpg',
+	{ path: 'images/smallerimages/gutta business 2.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/gutta fathers milk.jpg',credit: 'Ihne Pedersen'},
+	{ path: 'images/smallerimages/gutta in bed 1.jpg',credit: 'Ingeborg Bjerke Styve'},
+  { path: 'images/smallerimages/gutta in grass.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/gutta kink 1.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/gutta laughing government.jpg',credit: 'Ihne Pedersen'},
+	{ path: 'images/smallerimages/gutta laughing kink 2.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/gutta laughing.jpg',credit: 'Ihne Pedersen / BLIKK'},
+	{ path: 'images/smallerimages/gutta photoshoot.jpg',credit: 'BLIKK'},
+	{ path: 'images/smallerimages/gutta posing w skulls.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/Larry kink.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/Larry red.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/larry sunshine.jpg',credit: 'Ingeborg Bjerke Styve'},
+  { path: 'images/smallerimages/Lavrans in dress.jpg',credit: 'Karina Rønning'},
+  { path: 'images/smallerimages/Lavrans kink.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/Lavrans red.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/Lavrans sailor.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/lavrans.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/Portrait Larry.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/Portrait RichHard.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/PORTRAIT ROBIN.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/Portrett Lavrans 1 “Lavrans like Jesus, makes water into wine.” - A theatre director.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/pride 1.png',credit: 'Victoria Finstad / Avisa Nordland'},
+	{ path: 'images/smallerimages/pride 2.png',credit: 'Victoria Finstad / Avisa Nordland'},
+	{ path: 'images/smallerimages/pride 3.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/pride 4.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/pride 5.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/pride 6.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/pride 7.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/pride 8.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/pride 9.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/pride 10.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/richhard audience.jpg',credit: 'Eirik Dyrøy Lotsberg'},
+	{ path: 'images/smallerimages/richhard kink.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/richhard red.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/richhard.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/robin _ Lavrans cake.jpeg',credit: 'Elin Osjord'},
+	{ path: 'images/smallerimages/robin asshole.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/robin audience.jpeg',credit: 'Arne Hauge'},
+	{ path: 'images/smallerimages/robin on toilet.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/robin red.jpg',credit: 'Ingeborg Bjerke Styve'},
+	{ path: 'images/smallerimages/show audience 1.jpg',credit: 'Arne Hauge'},
+	{ path: 'images/smallerimages/show audience 2.jpeg',credit: 'Arne Hauge'},
+	{ path: 'images/smallerimages/show audience 3.jpg',credit: 'Arne Hauge'},
+	{ path: 'images/smallerimages/show audience 4.jpg',credit: 'Arne Hauge'},
+	{ path: 'images/smallerimages/show audience pink.jpg',credit: 'Karina Rønning'},
+	{ path: 'images/smallerimages/show audience pink(1).jpg',credit: 'Karina Rønning'},
+	{ path: 'images/smallerimages/show audience Richard pink.jpg',credit: 'Karina Rønning'},
+	{ path: 'images/EDL_3324_Foto Eirill DeLonge.jpg',credit: 'Eirill DeLonge'},
 
   // Add more images as needed with 'images/imagename.jpg'
 ];
 
 let currentImageIndex = 0;
 
-images.forEach((imagePath, index) => {
+images.forEach((imageData, index) => {
   const img = document.createElement('img');
-  img.src = imagePath;
+  img.src = imageData.path;
   img.alt = 'Image';
   img.className = 'grid-image';
-  img.addEventListener('click', () => openModal(imagePath, index));
+  img.addEventListener('click', () => openModal(imageData.path, imageData.credit, index));
   imageContainer.appendChild(img);
 });
 
-function openModal(imagePath, index) {
+function openModal(imagePath, imageCredit, index) {
   currentImageIndex = index;
   modal.style.display = 'block';
   modalImage.src = imagePath;
+  modalCaption.textContent = 'Photo credit: ' + imageCredit;
 }
 
 function closeModal() {
@@ -79,10 +81,18 @@ function closeModal() {
 
 function prevImage() {
   currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-  modalImage.src = images[currentImageIndex];
+  modalImage.src = images[currentImageIndex].path;
+  modalCaption.textContent = 'Photo credit: ' + images[currentImageIndex].credit;
 }
 
 function nextImage() {
   currentImageIndex = (currentImageIndex + 1) % images.length;
-  modalImage.src = images[currentImageIndex];
+  modalImage.src = images[currentImageIndex].path;
+  modalCaption.textContent = 'Photo credit: ' + images[currentImageIndex].credit;
 }
+function openModal(imagePath, imageCredit, index) {
+	currentImageIndex = index;
+	modal.style.display = 'block';
+	modalImage.src = imagePath;
+	modalCaption.textContent = 'Photo credit: ' + imageCredit;
+  }
