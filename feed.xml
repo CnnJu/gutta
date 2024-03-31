@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-  <channel xmlns:atom="http://www.w3.org/2005/Atom">
-    <title><![CDATA[Gutta]]></title>
+  <channel>
+    <title>Gutta</title>
     <link>https://www.gutta.world</link>
-    <description><![CDATA[Gutta is a drag king collective based in Oslo consisting of the four performing artists Desiree Bøgh Vaksdal (NO), Josephine Kylén Collins (SE), Lærke Grøntved (DK) and Ann-Christin Kongsness (NO).]]></description>
+    <description>Gutta is a drag king collective based in Oslo consisting of the four performing artists Desiree Bøgh Vaksdal (NO), Josephine Kylén Collins (SE), Lærke Grøntved (DK) and Ann-Christin Kongsness (NO)</description>
     <language>en</language>
     <!-- Add more items for each event -->
     <item>
-      <title><![CDATA[Gutta's upcoming events]]></title>
-      <link><![CDATA[https://gutta.world/calendar.html]]></link>
+      <title>Gutta's upcoming events</title>
+      <link>https://gutta.world/calendar.html</link>
       <description>Description of the event</description>
       <pubDate></pubDate>
     </item>
