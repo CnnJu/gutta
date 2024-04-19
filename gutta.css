@@ -386,9 +386,16 @@ img {
 .calendar {
 	text-align: center;
 }
+#newsletter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
 button {
 	background-color: #0038A2;
 	color: #ffffff;
+	font-family: "DINdong", "Gotham", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 	border: none;
 	border-radius: 5px;
 	padding: 10px 20px;
