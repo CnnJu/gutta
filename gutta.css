@@ -386,6 +386,18 @@ img {
 .calendar {
 	text-align: center;
 }
+button {
+	background-color: #0038A2;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  button:hover {
+	opacity: 0.8;
+  }
 #pasteventslist ul li {
 	text-align: left;
 }
