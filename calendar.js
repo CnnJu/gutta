@@ -14,17 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
         var eventText;
         if (isUpcoming) {
             if (!ticketLink) {
-                if (location) {
-                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Free Entry!";
-                } else {
-                    eventText = " — Free Entry!";
-                }
+                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Tickets Information Coming";
+            } else if (ticketLink === "Free Entry!") {
+                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Free Entry!";
             } else {
-                if (location) {
-                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
-                } else {
-                    eventText = " — <a href='" + eventLink + "'>Event Details</a> — <a href='" + ticketLink + "'>tickets</a>";
-                }
+                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
             }
         } else {
             eventText = " — " + location;
@@ -41,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("Target list not found:", isUpcoming ? "upcomingeventslist" : "pasteventslist");
         }
     }
+    
     
 
   // Example of adding a new upcoming event
