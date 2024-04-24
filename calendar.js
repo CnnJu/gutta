@@ -13,10 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
         // Construct the content of the li element
         var eventText;
         if (isUpcoming) {
-            if (ticketLink) {
-                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
+            if (!ticketLink) {
+                if (location) {
+                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Free Entry!";
+                } else {
+                    eventText = " — Free Entry!";
+                }
             } else {
-                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Free Entry!";
+                if (location) {
+                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
+                } else {
+                    eventText = " — <a href='" + eventLink + "'>Event Details</a> — <a href='" + ticketLink + "'>tickets</a>";
+                }
             }
         } else {
             eventText = " — " + location;
