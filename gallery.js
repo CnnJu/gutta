@@ -52,7 +52,6 @@ const images = [
 	{ path: 'images/smallerimages/show audience pink.jpg',credit: 'Karina Rønning'},
 	{ path: 'images/smallerimages/show audience pink(1).jpg',credit: 'Karina Rønning'},
 	{ path: 'images/smallerimages/show audience Richard pink.jpg',credit: 'Karina Rønning'},
-	{ path: 'images/EDL_3324_Foto Eirill DeLonge.jpg',credit: 'Eirill DeLonge'},
 
   // Add more images as needed with 'images/imagename.jpg'
 ];

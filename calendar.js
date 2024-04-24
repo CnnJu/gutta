@@ -31,10 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Example of adding a new upcoming event
-  
-
-    // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
-
+  // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
+  addEvent("10.05.2024", "Naughty Cabaret, Teaterkjellern, Oslo", "", "https://www.ticketmaster.no/event/731063", true);
   // Example of adding a new past event
   addEvent("2019-2024", "Gutteklubben at SALT, Skeiv Scene, LOKAL in Trondheim, Elsker Oslo, RAS/ Rogaland på Skeivå", "", "", false);
   addEvent("2019-2024", "Gutta at Pride; Træna Pride, Oslo Pride, Bodø Pride, Drammen Pride, Trondheim Pride", "", "", false);
