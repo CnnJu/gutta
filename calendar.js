@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Example of adding a new upcoming event
   // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
   addEvent("10.05.2024", "Naughty Cabaret, Teaterkjellern, Oslo", "", "https://www.ticketmaster.no/event/731063", true);
-  addEvent("02.06.2024", "Pride House, Bergen Pride", "https://bergenpride.no", "", true);
-  addEvent("07.06.2024", "Porsgrunn International Theatre Festival, Grenland Friteater", "https://pitfestival.no", "xxx", true);
-  addEvent("25.06.2024", "Oslo Pride at SALT", "https://www.oslopride.no", "", true);
+  addEvent("02.06.2024", "Pride House, Bergen Pride", "https://bergenpride.no", "Free Entry!", true);
+  addEvent("07.06.2024", "Porsgrunn International Theatre Festival, Grenland Friteater", "https://pitfestival.no", "", true);
+  addEvent("25.06.2024", "Oslo Pride at SALT", "https://www.oslopride.no", "Free Entry!", true);
   // Example of adding a new past event
   addEvent("2019-2024", "Gutteklubben at SALT, Skeiv Scene, LOKAL in Trondheim, Elsker Oslo, RAS/ Rogaland på Skeivå", "", "", false);
   addEvent("2019-2024", "Gutta at Pride; Træna Pride, Oslo Pride, Bodø Pride, Drammen Pride, Trondheim Pride", "", "", false);
