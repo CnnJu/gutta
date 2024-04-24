@@ -1,34 +1,39 @@
 document.addEventListener('DOMContentLoaded', function() {
-  function addEvent(date, location, eventLink, ticketLink, isUpcoming) {
-      console.log("Adding event:", date, location, eventLink, ticketLink, isUpcoming);
-
-      var newEvent = document.createElement("li");
-      newEvent.style.textAlign = "left"; // Align the event text to the left
-
-      // Format the date separately
-      var formattedDate = document.createElement("span");
-      formattedDate.textContent = date;
-      formattedDate.style.fontWeight = "bold";  // Adding some style to differentiate the date
-
-      // Construct the content of the li element
-      var eventText;
-      if (isUpcoming) {
-          eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
-      } else {
-          eventText = " — " + location;
-      }
-
-      newEvent.innerHTML = formattedDate.outerHTML + eventText;
-
-      var targetList = isUpcoming ? document.getElementById("upcomingeventslist") : document.getElementById("pasteventslist");
-
-      if (targetList) {
-          targetList.appendChild(newEvent);
-          console.log("Event added successfully.");
-      } else {
-          console.error("Target list not found:", isUpcoming ? "upcomingeventslist" : "pasteventslist");
-      }
-  }
+    function addEvent(date, location, eventLink, ticketLink, isUpcoming) {
+        console.log("Adding event:", date, location, eventLink, ticketLink, isUpcoming);
+    
+        var newEvent = document.createElement("li");
+        newEvent.style.textAlign = "left"; // Align the event text to the left
+    
+        // Format the date separately
+        var formattedDate = document.createElement("span");
+        formattedDate.textContent = date;
+        formattedDate.style.fontWeight = "bold";  // Adding some style to differentiate the date
+    
+        // Construct the content of the li element
+        var eventText;
+        if (isUpcoming) {
+            if (ticketLink) {
+                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
+            } else {
+                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Free Entry!";
+            }
+        } else {
+            eventText = " — " + location;
+        }
+    
+        newEvent.innerHTML = formattedDate.outerHTML + eventText;
+    
+        var targetList = isUpcoming ? document.getElementById("upcomingeventslist") : document.getElementById("pasteventslist");
+    
+        if (targetList) {
+            targetList.appendChild(newEvent);
+            console.log("Event added successfully.");
+        } else {
+            console.error("Target list not found:", isUpcoming ? "upcomingeventslist" : "pasteventslist");
+        }
+    }
+    
 
   // Example of adding a new upcoming event
   // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
