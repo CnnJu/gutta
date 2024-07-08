@@ -11,18 +11,20 @@ document.addEventListener('DOMContentLoaded', function() {
         formattedDate.style.fontWeight = "bold";  // Adding some style to differentiate the date
     
         // Construct the content of the li element
-        var eventText;
-        if (isUpcoming) {
-            if (!ticketLink) {
-                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Tickets Information Coming";
-            } else if (ticketLink === "Free Entry - Donations") {
-                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Free Entry - Donations";
+            var eventText;
+            if (isUpcoming) {
+                if (!ticketLink) {
+                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Tickets Information Coming";
+                } else if (ticketLink === "Free Entry - Donations") {
+                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Free Entry - Donations";
+                } else {
+                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
+                }
             } else {
-                eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
+                eventText = " — " + location;
             }
-        } else {
-            eventText = " — " + location;
-        }
+
+
     
         newEvent.innerHTML = formattedDate.outerHTML + eventText;
     
