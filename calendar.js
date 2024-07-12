@@ -11,20 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
         formattedDate.style.fontWeight = "bold";  // Adding some style to differentiate the date
     
         // Construct the content of the li element
-            var eventText;
-            if (isUpcoming) {
-                if (!ticketLink) {
-                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Tickets Information Coming";
-                } else if (ticketLink === "Free Entry - Donations") {
-                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — Free Entry - Donations";
-                } else {
-                    eventText = " — <a href='" + eventLink + "'>" + location + "</a> — <a href='" + ticketLink + "'>tickets</a>";
-                }
+        var eventText = " — <a href='" + eventLink.trim() + "'>" + location + "</a>";
+
+        if (isUpcoming) {
+            if (!ticketLink) {
+                eventText += " — Tickets Information Coming";
+            } else if (ticketLink === "Free Entry - Donations") {
+                eventText += " — Free Entry - Donations";
             } else {
-                eventText = " — " + location;
+                eventText += " — <a href='" + ticketLink.trim() + "'>tickets</a>";
             }
-
-
+        }
     
         newEvent.innerHTML = formattedDate.outerHTML + eventText;
     
@@ -37,6 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("Target list not found:", isUpcoming ? "upcomingeventslist" : "pasteventslist");
         }
     }
+
+    addEvent("04.08.2024", "Linienstrasse 206, Berlin — NB: Show starts at 7pm", "https://www.instagram.com/linie206_bleibt/", "Free Entry - Donations", true);
+});
+
     
     
 
