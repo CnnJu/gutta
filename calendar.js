@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Construct the content of the li element
         var eventText = " — <a href='" + eventLink.trim() + "'>" + location + "</a>";
+        
+        console.log("Initial event text:", eventText);
 
         if (isUpcoming) {
             if (!ticketLink) {
@@ -22,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 eventText += " — <a href='" + ticketLink.trim() + "'>tickets</a>";
             }
         }
-    
+        
+        console.log("Final event text:", eventText);
+
         newEvent.innerHTML = formattedDate.outerHTML + eventText;
     
         var targetList = isUpcoming ? document.getElementById("upcomingeventslist") : document.getElementById("pasteventslist");
@@ -34,12 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("Target list not found:", isUpcoming ? "upcomingeventslist" : "pasteventslist");
         }
     }
-
-    addEvent("04.08.2024", "Linienstrasse 206, Berlin — NB: Show starts at 7pm", "https://www.instagram.com/linie206_bleibt/", "Free Entry - Donations", true);
-});
-
-    
-    
 
   // Example of adding a new upcoming event
   // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
