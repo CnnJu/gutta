@@ -41,10 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Example of adding a new upcoming event
   // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
-  addEvent("02.08.2024", "Sonntags Club, Berlin ", "https://www.sonntags-club.de/programm/gutta.php", "Free Entry - Donations", true);
-  addEvent("03.08.2024", "Get Fucked, Freiluftkino Hasenheide, Berlin", "https://www.freiluftkino-hasenheide.de/filme/get-fucked-in-hasenheide-olympias-event-27134/", "https://www.kinoheld.de/kino/berlin/freiluftkino-hasenheide/vorstellung/780485", true);
-  addEvent("04.08.2024", "Linienstrasse 206, Berlin — NB: Show starts at 7pm", " https://www.instagram.com/linie206_bleibt/", "Free Entry - Donations", true);
+  addEvent("12.09.2024", "Me Nightclub, Trondheim Pride", "https://www.trondheimpride.no/event/big-daddy-karten-gutta/", "https://trondheimpride.hoopla.no/event/4249046043", true);
+  addEvent("14.09.2024", "Grenland Pride, parade & show", "https://www.grenlandpride.no", "Free Entry!", true);
   // Example of adding a new past event
+  addEvent("18.08.2024", "Queer Spirit Festival, Devon, England ", "https://queerspirit.net/festival/whatson/performance/performance-by-venue/big-top/richhard-larry", "", false);
+  addEvent("02.08.2024", "Sonntags Club, Berlin ", "https://www.sonntags-club.de/programm/gutta.php", "Free Entry - Donations", false);
+  addEvent("03.08.2024", "Get Fucked, Freiluftkino Hasenheide, Berlin", "https://www.freiluftkino-hasenheide.de/filme/get-fucked-in-hasenheide-olympias-event-27134/", "https://www.kinoheld.de/kino/berlin/freiluftkino-hasenheide/vorstellung/780485", false);
+  addEvent("04.08.2024", "Linienstrasse 206, Berlin — NB: Show starts at 7pm", " https://www.instagram.com/linie206_bleibt/", "Free Entry - Donations", false);
   addEvent("10.05.2024", "Naughty Cabaret, Teaterkjellern, Oslo", "", "https://www.ticketmaster.no/event/731063", false);
   addEvent("02.06.2024", "Pride House, Bergen Pride", "https://bergenpride.no", "Free Entry!", false);
   addEvent("07.06.2024", "Porsgrunn International Theatre Festival, Grenland Friteater", "https://pitfestival.no", "", false);
