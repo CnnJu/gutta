@@ -41,9 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Example of adding a new upcoming event
   // Add more events as needed with 'addEvent("date", "Name and place", "link to description", "link to tickets", true);'
-  addEvent("12.09.2024", "Me Nightclub, Trondheim Pride", "https://www.trondheimpride.no/event/big-daddy-karten-gutta/", "https://trondheimpride.hoopla.no/event/4249046043", true);
-  addEvent("14.09.2024", "Grenland Pride, parade & show", "https://www.grenlandpride.no", "Free Entry!", true);
+  addEvent("14.11.2024", "Reykjavik Dance Festival, Iceland", "http://www.reykjavikdancefestival.com/gutteklubbengoestohell", "https://tix.is/event/18483", true);
+  addEvent("13.12.2024", "MIR, Oslo", "https://www.facebook.com/events/1759514384877145 ", "https://checkout.ebillett.no/368/events/194/purchase", true);
   // Example of adding a new past event
+  addEvent("12.09.2024", "Me Nightclub, Trondheim Pride", "https://www.trondheimpride.no/event/big-daddy-karten-gutta/", "https://trondheimpride.hoopla.no/event/4249046043", false);
+  addEvent("14.09.2024", "Grenland Pride, parade & show", "https://www.grenlandpride.no", "Free Entry!", false);
   addEvent("18.08.2024", "Queer Spirit Festival, Devon, England ", "https://queerspirit.net/festival/whatson/performance/performance-by-venue/big-top/richhard-larry", "", false);
   addEvent("02.08.2024", "Sonntags Club, Berlin ", "https://www.sonntags-club.de/programm/gutta.php", "Free Entry - Donations", false);
   addEvent("03.08.2024", "Get Fucked, Freiluftkino Hasenheide, Berlin", "https://www.freiluftkino-hasenheide.de/filme/get-fucked-in-hasenheide-olympias-event-27134/", "https://www.kinoheld.de/kino/berlin/freiluftkino-hasenheide/vorstellung/780485", false);
